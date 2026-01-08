@@ -6,8 +6,8 @@ const siteName = 'DAHLKE<span class="text-blue-500">MEDIA</span>';
 const navLinks = [
     { name: 'Home', link: 'index.html' },
     { name: 'Portfolio', link: 'portfolio.html' },
-    { name: 'About', link: 'about.html' }, 
-    { name: 'Contact', link: 'contact.html' }
+//    { name: 'About', link: 'about.html' }, 
+//    { name: 'Contact', link: 'contact.html' }
 ];
 
 // ---------------------------------------------------------
