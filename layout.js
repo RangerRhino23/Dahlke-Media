@@ -1,0 +1,116 @@
+// ---------------------------------------------------------
+//  CONFIGURATION
+// ---------------------------------------------------------
+const siteName = 'DAHLKE<span class="text-blue-500">MEDIA</span>';
+
+const navLinks = [
+    { name: 'Home', link: 'index.html' },
+    { name: 'Portfolio', link: 'portfolio.html' },
+    { name: 'About', link: 'about.html' }, 
+    { name: 'Contact', link: 'contact.html' }
+];
+
+// ---------------------------------------------------------
+//  HTML COMPONENTS (NAV & FOOTER)
+// ---------------------------------------------------------
+
+const navbarHTML = `
+<nav class="bg-slate-900/90 backdrop-blur-sm border-b border-slate-800 fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex-shrink-0 flex items-center">
+                <a href="index.html" class="text-2xl font-bold text-white tracking-tight">
+                    ${siteName}
+                </a>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 items-center" id="desktop-menu-container">
+                <!-- Links injected by JS -->
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="flex items-center md:hidden">
+                <button id="mobile-menu-btn" class="text-slate-400 hover:text-white focus:outline-none p-2">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden bg-slate-900 border-b border-slate-800 absolute w-full" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3" id="mobile-menu-container">
+            <!-- Mobile Links injected by JS -->
+        </div>
+    </div>
+</nav>
+`;
+
+const footerHTML = `
+<footer class="bg-black text-slate-500 py-8 border-t border-slate-900 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+            &copy; <span id="year">${new Date().getFullYear()}</span> Dahlke Media. All rights reserved.
+        </div>
+        <div class="text-sm flex gap-4">
+            <a href="#" class="hover:text-slate-300 transition">Instagram</a>
+            <a href="#" class="hover:text-slate-300 transition">Email</a>
+        </div>
+    </div>
+</footer>
+`;
+
+// ---------------------------------------------------------
+//  INJECTION LOGIC
+// ---------------------------------------------------------
+
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. Inject Structure
+    const navPlaceholder = document.getElementById('global-nav');
+    const footerPlaceholder = document.getElementById('global-footer');
+
+    if (navPlaceholder) navPlaceholder.innerHTML = navbarHTML;
+    if (footerPlaceholder) footerPlaceholder.innerHTML = footerHTML;
+
+    // 2. Generate Links based on current page
+    const desktopContainer = document.getElementById('desktop-menu-container');
+    const mobileContainer = document.getElementById('mobile-menu-container');
+    
+    // Get current file name (e.g., "index.html")
+    const currentPage = window.location.pathname.split("/").pop() || 'index.html';
+
+    navLinks.forEach(item => {
+        // Determine if this is the active page
+        const isActive = item.link === currentPage;
+        
+        // Desktop Link Style
+        const dLink = document.createElement('a');
+        dLink.href = item.link;
+        dLink.innerText = item.name;
+        dLink.className = isActive 
+            ? "text-white bg-slate-800 px-3 py-2 rounded-md font-medium transition" // Active
+            : "text-slate-300 hover:text-white hover:bg-slate-800 px-3 py-2 rounded-md font-medium transition"; // Inactive
+        desktopContainer.appendChild(dLink);
+
+        // Mobile Link Style
+        const mLink = document.createElement('a');
+        mLink.href = item.link;
+        mLink.innerText = item.name;
+        mLink.className = isActive
+            ? "block px-3 py-2 rounded-md text-base font-medium text-white bg-slate-800"
+            : "block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800";
+        mobileContainer.appendChild(mLink);
+    });
+
+    // 3. Mobile Menu Toggle Logic
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+});
+
