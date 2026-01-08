@@ -50,9 +50,9 @@ const navbarHTML = `
 const footerHTML = `
 <footer class="bg-black text-slate-500 py-8 border-t border-slate-900 mt-auto">
     <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-        <div class="mb-4 md:mb-0">
+        <a href="copyright.html"><div class="mb-4 md:mb-0">
             &copy; <span id="year">${new Date().getFullYear()}</span> Dahlke Media. All rights reserved.
-        </div>
+        </div></a>
         <div class="text-sm flex gap-4">
             <a href="https://instagram.com/DahlkeMedia" class="hover:text-slate-300 transition">Instagram</a>
             <a href="mailto:contact@dahlkemedia.com" class="hover:text-slate-300 transition">Email</a>
