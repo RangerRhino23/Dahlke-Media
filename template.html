@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dahlke Media | Template</title>
+    
+    <!-- 1. ESSENTIAL STYLES (Keep these on every page) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Dark Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-300 flex flex-col min-h-screen">
+
+    <!-- 2. NAV PLACEHOLDER (Do not remove) -->
+    <div id="global-nav"></div>
+
+    <!-- 3. MAIN CONTENT (All your page content goes inside 'main') -->
+    <main class="flex-grow pt-28 pb-20">
+        
+        <!-- PAGE HEADER / TITLE SECTION -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+            <h1 class="text-4xl font-extrabold text-white">Page Title Here</h1>
+            <p class="text-xl text-slate-400 mt-2">A subtitle or brief description of what this page is about.</p>
+            <!-- Divider Line -->
+            <div class="w-24 h-1 bg-blue-500 mt-6 rounded"></div>
+        </section>
+
+
+        <!-- =======================================================
+             ELEMENT BLOCKS (Copy/Paste what you need below) 
+        ======================================================== -->
+
+        <!-- BLOCK A: SIMPLE TEXT CONTENT -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+            <h2 class="text-2xl font-bold text-white mb-4">Simple Text Block</h2>
+            <p class="mb-4 leading-relaxed">
+                This is a standard paragraph. It has good line height for readability. 
+                You can use this for blog posts, bio descriptions, or general information.
+            </p>
+            <p class="mb-4 leading-relaxed">
+                This is a second paragraph to show spacing. <strong class="text-blue-400">This text is highlighted/bold.</strong>
+            </p>
+        </section>
+
+
+        <!-- BLOCK B: 2-COLUMN LAYOUT (Image + Text) -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Left Side (Image/Video Placeholder) -->
+                <div class="bg-slate-900 rounded-xl h-64 border border-slate-800 flex items-center justify-center text-slate-600">
+                    <span class="text-lg"><i class="fas fa-image mr-2"></i> Image Placeholder</span>
+                    <!-- Replace above div with: <img src="image.jpg" class="rounded-xl shadow-lg w-full"> -->
+                </div>
+                <!-- Right Side (Text) -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Split Layout</h3>
+                    <p class="text-slate-400 mb-6">
+                        Great for "About Me" sections or showcasing a specific service. 
+                        It breaks up the monotony of full-width text.
+                    </p>
+                    <ul class="space-y-2 text-slate-300">
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i> Feature Point One</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i> Feature Point Two</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i> Feature Point Three</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- BLOCK C: 3-COLUMN CARDS (Services/Features) -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+            <h2 class="text-2xl font-bold text-white mb-8 text-center">Three Column Grid</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                
+                <!-- Card 1 -->
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-blue-500/50 transition duration-300">
+                    <i class="fas fa-video text-blue-500 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Video Editing</h3>
+                    <p class="text-slate-400 text-sm">Description of the service provided.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-blue-500/50 transition duration-300">
+                    <i class="fas fa-layer-group text-purple-500 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Graphic Design</h3>
+                    <p class="text-slate-400 text-sm">Description of the service provided.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-blue-500/50 transition duration-300">
+                    <i class="fas fa-camera text-pink-500 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Photography</h3>
+                    <p class="text-slate-400 text-sm">Description of the service provided.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- BLOCK D: VIDEO EMBED (Responsive) -->
+        <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+            <h2 class="text-2xl font-bold text-white mb-6">Video Embed</h2>
+            <!-- 16:9 Aspect Ratio Container -->
+            <div class="relative w-full aspect-video bg-black rounded-xl overflow-hidden shadow-2xl border border-slate-800">
+                <!-- Replace 'src' with your YouTube embed link -->
+                <iframe class="absolute top-0 left-0 w-full h-full" 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+
+        <!-- BLOCK E: BUTTONS -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 text-center">
+            <h2 class="text-2xl font-bold text-white mb-6">Button Styles</h2>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <!-- Primary Button -->
+                <a href="#" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-8 rounded-full transition shadow-lg shadow-blue-900/40">
+                    Primary Action
+                </a>
+                <!-- Secondary Button -->
+                <a href="#" class="bg-slate-800 hover:bg-slate-700 text-white font-semibold py-3 px-8 rounded-full transition border border-slate-700">
+                    Secondary Action
+                </a>
+                <!-- Outline Button -->
+                <a href="#" class="border border-slate-600 text-slate-300 hover:border-white hover:text-white font-semibold py-3 px-8 rounded-full transition">
+                    Outline Button
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 4. FOOTER PLACEHOLDER (Do not remove) -->
+    <div id="global-footer"></div>
+
+    <!-- 5. LAYOUT SCRIPT (Do not remove) -->
+    <script src="layout.js"></script>
+
+</body>
+</html>
+
