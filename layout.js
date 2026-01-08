@@ -7,7 +7,7 @@ const navLinks = [
     { name: 'Home', link: 'index.html' },
     { name: 'Portfolio', link: 'portfolio.html' },
 //    { name: 'About', link: 'about.html' }, 
-//    { name: 'Contact', link: 'contact.html' }
+    { name: 'Contact', link: 'contact.html' }
 ];
 
 // ---------------------------------------------------------
@@ -54,8 +54,8 @@ const footerHTML = `
             &copy; <span id="year">${new Date().getFullYear()}</span> Dahlke Media. All rights reserved.
         </div>
         <div class="text-sm flex gap-4">
-            <a href="#" class="hover:text-slate-300 transition">Instagram</a>
-            <a href="#" class="hover:text-slate-300 transition">Email</a>
+            <a href="https://instagram.com/DahlkeMedia" class="hover:text-slate-300 transition">Instagram</a>
+            <a href="mailto:contact@dahlkemedia.com" class="hover:text-slate-300 transition">Email</a>
         </div>
     </div>
 </footer>
