@@ -47,7 +47,7 @@ const navbarHTML = `
 const footerHTML = `
 <footer class="bg-black text-slate-500 py-8 border-t border-slate-900 mt-auto">
     <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-        <a href="copyright.html"><div class="mb-4 md:mb-0">
+        <a href="../copyright.html"><div class="mb-4 md:mb-0">
             &copy; <span id="year">${new Date().getFullYear()}</span> Dahlke Media. All rights reserved.
         </div></a>
         <div class="text-sm flex gap-4">
