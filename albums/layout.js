@@ -4,11 +4,7 @@
 const siteName = 'DAHLKE<span class="text-blue-500">MEDIA</span>';
 
 const navLinks = [
-    { name: 'Home', link: 'index.html' },
-    { name: 'Event Albums', link: 'albums/index.html' },
-    { name: 'About Me', link: '#AboutMe'},
-    { name: 'Portfolio', link: 'portfolio.html' }, 
-    { name: 'Contact', link: 'contact.html' }
+    { name: 'Home', link: '../index.html' }
 ];
 
 // ---------------------------------------------------------
@@ -20,11 +16,11 @@ const navbarHTML = `
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex-shrink-0 flex items-center">
-                <a href="index.html" class="text-2xl font-bold text-white tracking-tight">
+                <a href="../index.html" class="text-2xl font-bold text-white tracking-tight">
                     ${siteName}
                 </a>
             </div>
-            
+
             <!-- Desktop Menu -->
             <div class="hidden md:flex space-x-8 items-center" id="desktop-menu-container">
                 <!-- Links injected by JS -->
@@ -84,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
     navLinks.forEach(item => {
         // Determine if this is the active page
         const isActive = item.link === currentPage;
-        
+
         // Desktop Link Style
         const dLink = document.createElement('a');
         dLink.href = item.link;
@@ -114,4 +110,3 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
-

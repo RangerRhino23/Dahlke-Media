@@ -21,41 +21,220 @@
     <div id="global-nav"></div>
 
     <!-- MAIN CONTENT -->
-    <main class="flex-grow pt-28 pb-10">
+    <main class="flex-grow pt-28 pb-20">
         
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- HEADER -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 text-center">
+            <h1 class="text-4xl font-extrabold text-white mb-4">Creative Portfolio</h1>
+            <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+                A collection of video edits, visual design, and photography.
+            </p>
+        </section>
+
+        <!-- =======================================================
+             SECTION 1: VIDEO EDITING & MOTION GRAPHICS
+        ======================================================== -->
+        <section id="video" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center mb-8">
+                <h2 class="text-2xl font-bold text-white mr-4">Video Production</h2>
+                <div class="h-px bg-slate-800 flex-grow"></div> 
+            </div>
+
+            <!-- Featured Video (Standard 16:9 Embed) -->
             <div class="mb-10">
-                <h1 class="text-3xl font-bold text-white">Selected Works</h1>
-                <div class="w-20 h-1 bg-blue-500 mt-2 rounded"></div>
+                <div class="relative w-full aspect-video bg-black rounded-xl overflow-hidden shadow-2xl border border-slate-800">
+                    <!-- 
+                        REPLACE 'YOUR_MAIN_VIDEO_ID' with your YouTube Video ID (e.g., dQw4w9WgXcQ)
+                    -->
+                    <iframe class="absolute top-0 left-0 w-full h-full" 
+                        src="https://www.youtube.com/embed/YOUR_MAIN_VIDEO_ID" 
+                        title="Main Reel" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <h3 class="text-xl font-semibold text-white mt-4">Cinematic Work</h3>
+                <p class="text-slate-400 text-sm">A compilation of my best work using Adobe Software.</p>
             </div>
 
-            <!-- Portfolio Grid -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Video Grid (9:16 Vertical / Shorts Embeds) -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
-                <!-- Project 1 -->
-                <div class="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden hover:border-blue-500/50 transition duration-300">
-                    <div class="h-48 bg-slate-800 flex items-center justify-center text-slate-600">
-                        <i class="fas fa-video text-3xl"></i>
+                <!-- Short 1 -->
+                <div>
+                    <div class="relative w-full aspect-[9/16] bg-black rounded-lg overflow-hidden border border-slate-800 shadow-lg">
+                        <!-- REPLACE 'YOUR_SHORT_ID_1' below -->
+                        <iframe class="absolute top-0 left-0 w-full h-full" 
+                            src="https://www.youtube.com/embed/YOUR_SHORT_ID_1" 
+                            title="Social Media Reel" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
                     </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg text-white">Cinematic Edit</h3>
-                        <p class="text-slate-400 text-sm mt-2">Edited using Premiere Pro & After Effects.</p>
+                    <div class="mt-3">
+                        <h4 class="text-white font-medium">Social Media Reel</h4>
+                        <span class="text-xs bg-slate-800 text-slate-400 px-2 py-1 rounded">Instagram / Shorts</span>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden hover:border-blue-500/50 transition duration-300">
-                    <div class="h-48 bg-slate-800 flex items-center justify-center text-slate-600">
-                        <i class="fas fa-camera text-3xl"></i>
+                <!-- Short 2 -->
+                <div>
+                    <div class="relative w-full aspect-[9/16] bg-black rounded-lg overflow-hidden border border-slate-800 shadow-lg">
+                        <!-- REPLACE 'YOUR_SHORT_ID_2' below -->
+                        <iframe class="absolute top-0 left-0 w-full h-full" 
+                            src="https://www.youtube.com/embed/YOUR_SHORT_ID_2" 
+                            title="Event Highlight" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
                     </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg text-white">Photography Set</h3>
-                        <p class="text-slate-400 text-sm mt-2">Captured on Canon R10.</p>
+                    <div class="mt-3">
+                        <h4 class="text-white font-medium">Event Highlight</h4>
+                        <span class="text-xs bg-slate-800 text-slate-400 px-2 py-1 rounded">Instagram / Shorts</span>
+                    </div>
+                </div>
+
+                <!-- Short 3 -->
+                <div>
+                    <div class="relative w-full aspect-[9/16] bg-black rounded-lg overflow-hidden border border-slate-800 shadow-lg">
+                        <!-- REPLACE 'YOUR_SHORT_ID_3' below -->
+                        <iframe class="absolute top-0 left-0 w-full h-full" 
+                            src="https://www.youtube.com/embed/YOUR_SHORT_ID_3" 
+                            title="Product Teaser" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="mt-3">
+                        <h4 class="text-white font-medium">Product Teaser</h4>
+                        <span class="text-xs bg-slate-800 text-slate-400 px-2 py-1 rounded">Instagram / Shorts</span>
                     </div>
                 </div>
 
             </div>
+        </section>
+
+
+        <!-- DIVIDER LINE -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border-t border-slate-800 my-20"></div>
         </div>
+
+
+        <!-- =======================================================
+             SECTION 2: GRAPHIC DESIGN
+        ======================================================== -->
+        <section id="graphics" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center mb-8">
+                <h2 class="text-2xl font-bold text-white mr-4">Graphic Design</h2>
+                <div class="h-px bg-slate-800 flex-grow"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Design Item 1 -->
+                <div class="bg-slate-900 rounded-lg border border-slate-800 overflow-hidden hover:shadow-xl hover:shadow-blue-900/10 transition duration-300">
+                    <div class="aspect-square bg-slate-800 flex items-center justify-center text-slate-600">
+                        <i class="fas fa-image text-3xl"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-white font-semibold">Brand Logo</h3>
+                        <p class="text-slate-500 text-xs mt-1">Illustrator</p>
+                    </div>
+                </div>
+
+                <!-- Design Item 2 -->
+                <div class="bg-slate-900 rounded-lg border border-slate-800 overflow-hidden hover:shadow-xl hover:shadow-blue-900/10 transition duration-300">
+                    <div class="aspect-square bg-slate-800 flex items-center justify-center text-slate-600">
+                        <i class="fas fa-image text-3xl"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-white font-semibold">Album Art</h3>
+                        <p class="text-slate-500 text-xs mt-1">Photoshop</p>
+                    </div>
+                </div>
+
+                <!-- Design Item 3 -->
+                <div class="bg-slate-900 rounded-lg border border-slate-800 overflow-hidden hover:shadow-xl hover:shadow-blue-900/10 transition duration-300">
+                    <div class="aspect-square bg-slate-800 flex items-center justify-center text-slate-600">
+                        <i class="fas fa-image text-3xl"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-white font-semibold">Stream Overlay</h3>
+                        <p class="text-slate-500 text-xs mt-1">After Effects</p>
+                    </div>
+                </div>
+
+                <!-- Design Item 4 -->
+                <div class="bg-slate-900 rounded-lg border border-slate-800 overflow-hidden hover:shadow-xl hover:shadow-blue-900/10 transition duration-300">
+                    <div class="aspect-square bg-slate-800 flex items-center justify-center text-slate-600">
+                        <i class="fas fa-image text-3xl"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-white font-semibold">YouTube Thumb</h3>
+                        <p class="text-slate-500 text-xs mt-1">Photoshop</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- DIVIDER LINE -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border-t border-slate-800 my-20"></div>
+        </div>
+
+
+        <!-- =======================================================
+             SECTION 3: PHOTOGRAPHY
+        ======================================================== -->
+        <section id="photography" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center mb-8">
+                <h2 class="text-2xl font-bold text-white mr-4">Photography</h2>
+                <div class="h-px bg-slate-800 flex-grow"></div>
+            </div>
+
+            <!-- Masonry-style Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                
+                <!-- Photo 1 (Landscape) -->
+                <div class="relative group overflow-hidden rounded-lg border border-slate-800 bg-slate-900">
+                    <div class="aspect-[4/3] flex items-center justify-center text-slate-600">
+                        <i class="fas fa-camera text-2xl"></i>
+                    </div>
+                </div>
+
+                <!-- Photo 2 (Portrait) -->
+                <div class="relative group overflow-hidden rounded-lg border border-slate-800 bg-slate-900 row-span-2">
+                    <div class="aspect-[3/4] h-full flex items-center justify-center text-slate-600">
+                        <i class="fas fa-camera text-2xl"></i>
+                    </div>
+                </div>
+
+                <!-- Photo 3 (Landscape) -->
+                <div class="relative group overflow-hidden rounded-lg border border-slate-800 bg-slate-900">
+                    <div class="aspect-[4/3] flex items-center justify-center text-slate-600">
+                        <i class="fas fa-camera text-2xl"></i>
+                    </div>
+                </div>
+
+                <!-- Photo 4 (Landscape) -->
+                <div class="relative group overflow-hidden rounded-lg border border-slate-800 bg-slate-900">
+                    <div class="aspect-[4/3] flex items-center justify-center text-slate-600">
+                        <i class="fas fa-camera text-2xl"></i>
+                    </div>
+                </div>
+
+                <!-- Photo 5 (Landscape) -->
+                <div class="relative group overflow-hidden rounded-lg border border-slate-800 bg-slate-900">
+                    <div class="aspect-[4/3] flex items-center justify-center text-slate-600">
+                        <i class="fas fa-camera text-2xl"></i>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
     </main>
 
@@ -67,4 +246,3 @@
 
 </body>
 </html>
-
