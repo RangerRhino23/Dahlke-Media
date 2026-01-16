@@ -55,8 +55,8 @@ const footerHTML = `
             &copy; <span id="year">${new Date().getFullYear()}</span> Dahlke Media. All rights reserved.
         </div></a>
         <div class="text-sm flex gap-4">
-            <a href="https://instagram.com/Dahlke_Media" class="hover:text-slate-300 transition">Instagram</a>
-            <a href="mailto:contact@dahlkemedia.com" class="hover:text-slate-300 transition">Email</a>
+            <a href="https://instagram.com/dahlke_media" target="_blank" rel="noopener noreferrer" class="hover:text-slate-300 transition">Instagram</a>
+            <a href="mailto:contact@dahlkemedia.com" target="_blank" rel="noopener noreferrer" class="hover:text-slate-300 transition">Email</a>
         </div>
     </div>
 </footer>
