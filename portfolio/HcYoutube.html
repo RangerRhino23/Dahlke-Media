@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dahlke Media | Holy Cross YouTube Media Campaign</title>
+    
+    <!-- 1. ESSENTIAL STYLES (Keep these on every page) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Dark Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-300 flex flex-col min-h-screen">
+
+    <!-- 2. NAV PLACEHOLDER (Do not remove) -->
+    <div id="global-nav"></div>
+
+    <!-- 3. MAIN CONTENT (All your page content goes inside 'main') -->
+    <main class="flex-grow pt-28 pb-20">
+        
+        <!-- PAGE HEADER / TITLE SECTION -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+            <h1 class="text-4xl font-extrabold text-white">Holy Cross YouTube Media Campaign</h1>
+            <p class="text-xl text-slate-400 mt-2">Revitalizing the digital presence through consistent branding and engaging thumbnails.</p>
+            <!-- Divider Line -->
+            <div class="w-24 h-1 bg-blue-500 mt-6 rounded"></div>
+        </section>
+
+        <!-- PROJECT OVERVIEW -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">Project Overview</h2>
+                    <p class="text-slate-400 mb-4 leading-relaxed">
+                        I undertook a complete redesign of the Holy Cross YouTube channel to improve viewer engagement and brand consistency. The goal was to create a modern, welcoming aesthetic that aligns with the church's values while making content easier to find and identify.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        Key areas of focus included creating recognizable and consistent thumbnails for livestreams, creating high quality sermon videos, creating quality sermon shorts based off of the weeks sermon, and refreshing the channel banner to provide a cohesive visual identity.
+                    </p>
+                    <br>
+                    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 text-center">
+                        <div class="flex flex-wrap gap-4 justify-center">
+                            <!-- Visit Youtube Page Button -->
+                            <a href="https://youtube.com/@HolyCrossKearney" target="_blank" class="border border-slate-600 text-slate-300 hover:border-white hover:text-white font-semibold py-3 px-8 rounded-full transition">
+                                Visit Holy Cross' YouTube Page!
+                            </a>
+                        </div>
+                    </section>
+                </div>
+                <div class="bg-slate-900 rounded-xl border border-slate-800 p-2 shadow-lg">
+                    <!-- Placeholder for Main Channel Art or Before/After -->
+                    <img src="../assets/portfolio/HCYoutube/YoutubeChannelBanner.jpg" class="w-full h-full object-cover cursor-pointer">
+                </div>
+            </div>
+        </section>
+
+        <!-- THUMBNAIL SHOWCASE GRID -->
+        <section id="gallery" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+            <div class="flex items-center mb-8">
+                <h2 class="text-2xl font-bold text-white mr-4">Thumbnail Designs</h2>
+                <div class="h-px bg-slate-800 flex-grow"></div>
+            </div>
+            
+            <div class="grid lg:grid-cols-5 gap-12">
+                <!-- Left Column: Stacked Cards (Span 3) -->
+                <div class="lg:col-span-3 flex flex-col gap-6">
+                    <!-- Card 1: Livestream -->
+                    <div class="bg-slate-900 rounded-lg border border-slate-800 overflow-hidden hover:border-blue-500/50 transition group hover:shadow-lg hover:shadow-blue-900/10">
+                        <div class="aspect-video bg-black relative">
+                            <!-- Image Placeholder -->
+                            <img src="../assets/portfolio/HCYoutube/LivestreamTemplate.jpg" class="w-full h-full object-cover cursor-pointer">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-white font-semibold mb-1">Livestream Thumbnails</h3>
+                            <p class="text-sm text-slate-400">Designed for high visibility and clear date/service identification.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Sermon Series -->
+                    <div class="bg-slate-900 rounded-lg border border-slate-800 overflow-hidden hover:border-blue-500/50 transition group hover:shadow-lg hover:shadow-blue-900/10">
+                        <div class="aspect-video bg-black relative">
+                            <!-- Image Placeholder -->
+                            <img src="../assets/portfolio/HCYoutube/SermonVideoTemplate.jpg" class="w-full h-full object-cover cursor-pointer">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-white font-semibold mb-1">Sermon Series</h3>
+                            <p class="text-sm text-slate-400">Thematic designs that change with each new sermon series.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Vertical Card (Span 2) -->
+                <div class="lg:col-span-2">
+                    <!-- Card 3: Special Events / Shorts -->
+                    <div class="bg-slate-900 rounded-lg border border-slate-800 overflow-hidden hover:border-blue-500/50 transition group hover:shadow-lg hover:shadow-blue-900/10 h-full flex flex-col">
+                        <div class="aspect-[9/16] lg:aspect-auto bg-black relative">
+                            <!-- Image Placeholder -->
+                            <img src="../assets/portfolio/HCYoutube/SermonShort.jpg" class="w-full h-auto cursor-pointer">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-white font-semibold mb-1">Sermon Shorts</h3>
+                            <p class="text-sm text-slate-400">Unique graphics for holidays and special church gatherings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BACK BUTTON -->
+        <section class="text-center mb-12">
+            <a href="index.html#mediacampaigns" class="inline-flex items-center text-slate-400 hover:text-white transition border border-slate-700 hover:border-slate-500 px-6 py-2 rounded-full">
+                <i class="fas fa-arrow-left mr-2"></i> Back to Portfolio
+            </a>
+        </section>
+
+    </main>
+
+    <!-- 4. FOOTER PLACEHOLDER (Do not remove) -->
+    <div id="global-footer"></div>
+
+    <!-- IMAGE MODAL OVERLAY -->
+    <div id="imageModal" class="fixed inset-0 z-[100] hidden bg-black/95 backdrop-blur-sm flex items-center justify-center p-4">
+        <button id="closeModal" class="absolute top-6 right-6 text-slate-400 hover:text-white transition text-5xl leading-none focus:outline-none">&times;</button>
+        <img id="modalImage" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl" src="" alt="Full Screen View">
+    </div>
+
+    <!-- 5. LAYOUT SCRIPT (Do not remove) -->
+    <script src="layout.js"></script>
+    
+    <script>
+        // Modal Logic
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const closeBtn = document.getElementById('closeModal');
+        
+        // Select images in the main content area
+        const galleryImages = document.querySelectorAll('main img');
+
+        galleryImages.forEach(img => {
+            img.addEventListener('click', function() {
+                modal.classList.remove('hidden');
+                modalImg.src = this.src;
+            });
+        });
+
+        function closeModal() {
+            modal.classList.add('hidden');
+            modalImg.src = '';
+        }
+
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+    </script>
+
+</body>
+</html>

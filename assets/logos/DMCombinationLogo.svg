@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_4" data-name="Layer 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5901.87 1080">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        font-family: Inter-Bold, Inter;
+        font-size: 631.22px;
+        font-variation-settings: 'opsz' 14, 'wght' 700;
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        fill: #507abb;
+      }
+
+      .cls-2 {
+        font-family: Inter-Black, Inter;
+        font-size: 175px;
+        font-variation-settings: 'opsz' 14, 'wght' 900;
+        font-weight: 800;
+      }
+
+      .cls-3 {
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-1" d="M711.9,632.6v343.16s-156.29,60.83-343.81.64l343.81-343.81"/>
+    <path class="cls-1" d="M596.08,727.03l-242.65,242.65s-153.53-67.5-243.56-242.65h486.21"/>
+    <path class="cls-1" d="M447.4,711.9H104.24s-60.83-156.29-.64-343.81l343.81,343.81"/>
+    <path class="cls-1" d="M352.97,596.08l-242.65-242.65s67.5-153.53,242.65-243.56v486.21"/>
+    <path class="cls-1" d="M368.1,447.4V104.24s156.29-60.83,343.81-.64l-343.81,343.81"/>
+    <path class="cls-1" d="M483.92,352.97l242.65-242.65s153.53,67.5,243.56,242.65h-486.21"/>
+    <path class="cls-1" d="M632.6,368.1h343.16s60.83,156.29.64,343.81l-343.81-343.81"/>
+    <path class="cls-1" d="M727.03,483.92l242.65,242.65s-67.5,153.53-242.65,243.56v-486.21"/>
+  </g>
+  <text class="cls-2" transform="translate(393.11 587.38)"><tspan x="0" y="0">DM</tspan></text>
+  <text class="cls-4" transform="translate(1141.59 758.28)"><tspan class="cls-3" x="0" y="0">D</tspan><tspan class="cls-1" x="429.34" y="0">AHLKE</tspan><tspan class="cls-5" x="2566.48" y="0">MEDIA </tspan></text>
+</svg>
