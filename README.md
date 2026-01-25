@@ -19,7 +19,7 @@ By accessing these files, you acknowledge that:
 
 ## 📖 Project Overview
 
-[Briefly describe what the website is here—e.g., "This is the source code for my personal portfolio/business site..."]
+This website is for the Dahlke Media Agency and is reserved for their use.
 
 ## 🛠️ Tech Stack
 
