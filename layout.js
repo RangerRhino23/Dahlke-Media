@@ -3,16 +3,16 @@
 // ---------------------------------------------------------
 
 //const siteName = 'DAHLKE<span class="text-blue-500">MEDIA</span>';
-//<a href="index.html" class="text-2xl font-bold text-white tracking-tight">
+//<a href="" class="text-2xl font-bold text-white tracking-tight">
 //    ${siteName}
 //  </a>
 
 const navLinks = [
-    { name: 'Home', link: 'index.html' },
-    { name: 'Event Albums', link: 'albums/index.html' },
-    { name: 'About Us', link: 'aboutus.html'},
-    { name: 'Portfolio', link: 'portfolio/index.html' }, 
-    { name: 'Contact', link: 'contact.html' }
+    { name: 'Home', link: '' },
+    { name: 'Event Albums', link: 'albums/' },
+    { name: 'About Us', link: 'aboutus'},
+    { name: 'Portfolio', link: 'portfolio/' }, 
+    { name: 'Contact', link: 'contact' }
 ];
 
 // ---------------------------------------------------------
@@ -25,7 +25,7 @@ const navbarHTML = `
         <div class="flex justify-between h-16">
             <div class="flex-shrink-0 flex items-center">
                 <!-- Put the original DahlkeMedia Text here! SVG LOGO REPLACSE -->
-                <a href="index.html">
+                <a href="">
                     <img src="assets/logos/DMCombinationLogo.svg" alt="Dahlke Media" class="h-10 w-auto">
                 </a>
             </div>
@@ -56,7 +56,7 @@ const navbarHTML = `
 const footerHTML = `
 <footer class="bg-black text-slate-500 py-8 border-t border-slate-900 mt-auto">
     <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-        <a href="copyright.html"><div class="mb-4 md:mb-0">
+        <a href="copyright"><div class="mb-4 md:mb-0">
             &copy; <span id="year">${new Date().getFullYear()}</span> Dahlke Media. All rights reserved.
         </div></a>
         <div class="text-sm flex gap-4">
@@ -83,8 +83,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const desktopContainer = document.getElementById('desktop-menu-container');
     const mobileContainer = document.getElementById('mobile-menu-container');
     
-    // Get current file name (e.g., "index.html")
-    const currentPage = window.location.pathname.split("/").pop() || 'index.html';
+    // Get current file name (e.g., "")
+    const currentPage = window.location.pathname.split("/").pop() || '';
 
     navLinks.forEach(item => {
         // Determine if this is the active page
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const desktopContainer = document.getElementById('desktop-menu-container');
     const mobileContainer = document.getElementById('mobile-menu-container');
     
-    const currentPage = window.location.pathname.split("/").pop() || 'index.html';
+    const currentPage = window.location.pathname.split("/").pop() || '';
 
     navLinks.forEach(item => {
         const isActive = item.link === currentPage;
