@@ -8,7 +8,7 @@
 //  </a>
 
 const navLinks = [
-    { name: 'Home', link: '' },
+    { name: 'Home', link: '/' },
     { name: 'Event Albums', link: 'albums/' },
     { name: 'About Us', link: 'aboutus'},
     { name: 'Portfolio', link: 'portfolio/' }, 
@@ -25,7 +25,7 @@ const navbarHTML = `
         <div class="flex justify-between h-16">
             <div class="flex-shrink-0 flex items-center">
                 <!-- Put the original DahlkeMedia Text here! SVG LOGO REPLACSE -->
-                <a href="">
+                <a href="/">
                     <img src="assets/logos/DMCombinationLogo.svg" alt="Dahlke Media" class="h-10 w-auto">
                 </a>
             </div>
