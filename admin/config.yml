@@ -1,30 +1,18 @@
 backend:
   name: github
-  repo: RangerRhino23/Dahlke-Media # Connected to your specific repository
-  branch: main # CHANGE TO 'master' if your default branch is called master instead of main
+  repo: RangerRhino23/Dahlke-Media
+  branch: main # Change to master if your default branch is master
 
-# This assumes you have a folder called 'images' in your repo for pictures. 
-# If your folder is named 'assets' or 'img', change these two lines to match.
-media_folder: "assets" 
-public_folder: "/assets"
+media_folder: "images" 
+public_folder: "/images"
 
 collections:
   - name: "pages"
     label: "Website Pages"
     files:
-      # --- PAGE 1: YOUR HOME PAGE ---
       - file: "index.html" 
         label: "Home Page"
         name: "home"
-        format: raw # 'raw' tells the CMS not to look for metadata, just pure code/text
+        format: raw 
         fields:
           - {label: "Page Content", name: "body", widget: "markdown"}
-
-      # --- PAGE 2: EXAMPLE ABOUT PAGE ---
-      # If you have an about.html, uncomment the lines below to make it editable
-      #- file: "about.html"
-      #  label: "About Us"
-      #  name: "about"
-      #  format: raw
-      #  fields:
-      #    - {label: "Page Content", name: "body", widget: "markdown"}
