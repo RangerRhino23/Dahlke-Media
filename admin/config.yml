@@ -3,8 +3,8 @@ backend:
   repo: RangerRhino23/Dahlke-Media
   branch: main # Change to master if your default branch is master
 
-media_folder: "images" 
-public_folder: "/images"
+media_folder: "assets" 
+public_folder: "/assets"
 
 collections:
   - name: "pages"
