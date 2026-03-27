@@ -297,6 +297,7 @@
             
             <div class="grid md:grid-cols-4 gap-6">
 
+                <!-- Boys & Girls SCRIMMAGE -->
                 <a id="graphic" href="#" class="group block bg-slate-900 rounded-xl border border-slate-800 overflow-hidden hover:border-slate-700 transition duration-300">
                     <div class="aspect-[3/4] w-full overflow-hidden bg-slate-800 flex items-center justify-center">
                         <div class="text-slate-700 group-hover:scale-110 transition duration-500">
@@ -309,6 +310,7 @@
                     </div>
                 </a>
 
+                <!-- Boys VS GI -->
                 <a id="graphic" href="#" class="group block bg-slate-900 rounded-xl border border-slate-800 overflow-hidden hover:border-slate-700 transition duration-300">
                     <div class="aspect-[3/4] w-full overflow-hidden bg-slate-800 flex items-center justify-center">
                         <div class="text-slate-700 group-hover:scale-110 transition duration-500">
@@ -321,6 +323,90 @@
                     </div>
                 </a>
 
+                <!-- Boys VS GI Pictures -->
+                <div>
+                    <div class="group block bg-slate-900 rounded-xl border border-slate-800 overflow-hidden hover:border-slate-700 transition duration-300 relative">
+                        <div class="aspect-[3/4] w-full relative">
+                            
+                            <div class="carousel-track flex overflow-x-auto snap-x snap-mandatory hide-scrollbar w-full h-full">
+                                
+                                <div class="w-full h-full flex-shrink-0 snap-center bg-slate-800 flex items-center justify-center">
+                                    <img src="../assets/albums/Soccer2026/3.19_Pictures/1.jpg" alt="Slide 1" class="w-full h-full object-cover">
+                                </div>
+                                
+                                <div class="w-full h-full flex-shrink-0 snap-center bg-slate-800 flex items-center justify-center">
+                                    <img src="../assets/albums/Soccer2026/3.19_Pictures/2.jpg" alt="Slide 2" class="w-full h-full object-cover">
+                                </div>
+
+                                <div class="w-full h-full flex-shrink-0 snap-center bg-slate-800 flex items-center justify-center">
+                                    <img src="../assets/albums/Soccer2026/3.19_Pictures/3.jpg" alt="Slide 3" class="w-full h-full object-cover">
+                                </div>
+
+                            </div>
+
+                            <button onclick="scrollCarousel(this, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white rounded-full p-2 flex items-center justify-center z-10 transition duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                                </svg>
+                            </button>
+
+                            <button onclick="scrollCarousel(this, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white rounded-full p-2 flex items-center justify-center z-10 transition duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </button>
+
+                        </div>
+
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold text-slate-500 group-hover:text-slate-400 transition duration-300">Boys VS GI Pictures</h3>
+                            <p class="text-slate-600 text-sm mt-1 italic">Photo Carousel &rarr;</p>
+                        </div>
+                    </div>
+
+                    <script>
+                        function scrollCarousel(button, direction) {
+                            // Find the closest container, then find the scrollable track inside it
+                            const container = button.closest('.group');
+                            const track = container.querySelector('.carousel-track');
+                            
+                            // Calculate the width of one image slide
+                            const scrollAmount = track.clientWidth;
+                            
+                            // Scroll smoothly by that amount (direction is either 1 or -1)
+                            track.scrollBy({
+                                left: scrollAmount * direction,
+                                behavior: 'smooth'
+                            });
+                        }
+                    </script>
+                    <style>
+                        /* Hide scrollbar for Chrome, Safari and Opera */
+                        .hide-scrollbar::-webkit-scrollbar {
+                            display: none;
+                        }
+                        /* Hide scrollbar for IE, Edge and Firefox */
+                        .hide-scrollbar {
+                            -ms-overflow-style: none;  /* IE and Edge */
+                            scrollbar-width: none;  /* Firefox */
+                        }
+                    </style>
+                </div>
+
+                <!-- Girls Tournament -->
+                <a id="graphic" href="#" class="group block bg-slate-900 rounded-xl border border-slate-800 overflow-hidden hover:border-slate-700 transition duration-300">
+                    <div class="aspect-[3/4] w-full overflow-hidden bg-slate-800 flex items-center justify-center">
+                        <div class="text-slate-700 group-hover:scale-110 transition duration-500">
+                            <img src="../assets/albums/Soccer2026/3.21_Girls.jpg" alt="Soccer Graphic">
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-slate-500 group-hover:text-slate-400 transition duration-300">Girls Tournament</h3>
+                        <p class="text-slate-600 text-sm mt-1 italic">Gameday Graphic &rarr;</p>
+                    </div>
+                </a>
+
+                <!-- Boys Tournament -->
                 <a id="graphic" href="#" class="group block bg-slate-900 rounded-xl border border-slate-800 overflow-hidden hover:border-slate-700 transition duration-300">
                     <div class="aspect-[3/4] w-full overflow-hidden bg-slate-800 flex items-center justify-center">
                         <div class="text-slate-700 group-hover:scale-110 transition duration-500">
@@ -333,17 +419,222 @@
                     </div>
                 </a>
 
+                <!-- Girls Kearney Tournament Pictures -->
+                <div>
+                    <div class="group block bg-slate-900 rounded-xl border border-slate-800 overflow-hidden hover:border-slate-700 transition duration-300 relative">
+                        <div class="aspect-[3/4] w-full relative">
+                            
+                            <div class="carousel-track flex overflow-x-auto snap-x snap-mandatory hide-scrollbar w-full h-full">
+                                
+                                <div class="w-full h-full flex-shrink-0 snap-center bg-slate-800 flex items-center justify-center">
+                                    <img src="../assets/albums/Soccer2026/3.21_Pictures_Girls/One Horizontal-2.jpg" alt="Slide 1" class="w-full h-full object-cover">
+                                </div>
+                                
+                                <div class="w-full h-full flex-shrink-0 snap-center bg-slate-800 flex items-center justify-center">
+                                    <img src="../assets/albums/Soccer2026/3.21_Pictures_Girls/One Horizontal-5.jpg" alt="Slide 2" class="w-full h-full object-cover">
+                                </div>
+
+                                <div class="w-full h-full flex-shrink-0 snap-center bg-slate-800 flex items-center justify-center">
+                                    <img src="../assets/albums/Soccer2026/3.21_Pictures_Girls/One Horizontal.jpg" alt="Slide 3" class="w-full h-full object-cover">
+                                </div>
+
+                                <div class="w-full h-full flex-shrink-0 snap-center bg-slate-800 flex items-center justify-center">
+                                    <img src="../assets/albums/Soccer2026/3.21_Pictures_Girls/One Horizontal-1.jpg" alt="Slide 4" class="w-full h-full object-cover">
+                                </div>
+                                
+                                <div class="w-full h-full flex-shrink-0 snap-center bg-slate-800 flex items-center justify-center">
+                                    <img src="../assets/albums/Soccer2026/3.21_Pictures_Girls/One Horizontal-3.jpg" alt="Slide 5" class="w-full h-full object-cover">
+                                </div>
+
+                                <div class="w-full h-full flex-shrink-0 snap-center bg-slate-800 flex items-center justify-center">
+                                    <img src="../assets/albums/Soccer2026/3.21_Pictures_Girls/One Horizontal-4.jpg" alt="Slide 6" class="w-full h-full object-cover">
+                                </div>
+
+                            </div>
+
+                            <button onclick="scrollCarousel(this, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white rounded-full p-2 flex items-center justify-center z-10 transition duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                                </svg>
+                            </button>
+
+                            <button onclick="scrollCarousel(this, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white rounded-full p-2 flex items-center justify-center z-10 transition duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </button>
+
+                        </div>
+
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold text-slate-500 group-hover:text-slate-400 transition duration-300">Girls Kearney Tournament Pictures</h3>
+                            <p class="text-slate-600 text-sm mt-1 italic">Photo Carousel &rarr;</p>
+                        </div>
+                    </div>
+
+                    <script>
+                        function scrollCarousel(button, direction) {
+                            // Find the closest container, then find the scrollable track inside it
+                            const container = button.closest('.group');
+                            const track = container.querySelector('.carousel-track');
+                            
+                            // Calculate the width of one image slide
+                            const scrollAmount = track.clientWidth;
+                            
+                            // Scroll smoothly by that amount (direction is either 1 or -1)
+                            track.scrollBy({
+                                left: scrollAmount * direction,
+                                behavior: 'smooth'
+                            });
+                        }
+                    </script>
+                    <style>
+                        /* Hide scrollbar for Chrome, Safari and Opera */
+                        .hide-scrollbar::-webkit-scrollbar {
+                            display: none;
+                        }
+                        /* Hide scrollbar for IE, Edge and Firefox */
+                        .hide-scrollbar {
+                            -ms-overflow-style: none;  /* IE and Edge */
+                            scrollbar-width: none;  /* Firefox */
+                        }
+                    </style>
+                </div>
+
+                <!-- Boys Kearney Tournament Pictures -->
+                <div>
+                    <div class="group block bg-slate-900 rounded-xl border border-slate-800 overflow-hidden hover:border-slate-700 transition duration-300 relative">
+                        <div class="aspect-[3/4] w-full relative">
+                            
+                            <div class="carousel-track flex overflow-x-auto snap-x snap-mandatory hide-scrollbar w-full h-full">
+                                
+                                <div class="w-full h-full flex-shrink-0 snap-center bg-slate-800 flex items-center justify-center">
+                                    <img src="../assets/albums/Soccer2026/3.21_Pictures_Boys/One Horizontal-1.jpg" alt="Slide 1" class="w-full h-full object-cover">
+                                </div>
+                                
+                                <div class="w-full h-full flex-shrink-0 snap-center bg-slate-800 flex items-center justify-center">
+                                    <img src="../assets/albums/Soccer2026/3.21_Pictures_Boys/One Horizontal-2.jpg" alt="Slide 2" class="w-full h-full object-cover">
+                                </div>
+
+                                <div class="w-full h-full flex-shrink-0 snap-center bg-slate-800 flex items-center justify-center">
+                                    <img src="../assets/albums/Soccer2026/3.21_Pictures_Boys/One Vertical.jpg" alt="Slide 3" class="w-full h-full object-cover">
+                                </div>
+
+                                <div class="w-full h-full flex-shrink-0 snap-center bg-slate-800 flex items-center justify-center">
+                                    <img src="../assets/albums/Soccer2026/3.21_Pictures_Boys/One Horizontal-3.jpg" alt="Slide 4" class="w-full h-full object-cover">
+                                </div>
+                                
+                                <div class="w-full h-full flex-shrink-0 snap-center bg-slate-800 flex items-center justify-center">
+                                    <img src="../assets/albums/Soccer2026/3.21_Pictures_Boys/One Horizontal.jpg" alt="Slide 5" class="w-full h-full object-cover">
+                                </div>
+
+                                <div class="w-full h-full flex-shrink-0 snap-center bg-slate-800 flex items-center justify-center">
+                                    <img src="../assets/albums/Soccer2026/3.21_Pictures_Boys/One Horizontal-4.jpg" alt="Slide 6" class="w-full h-full object-cover">
+                                </div>
+
+                            </div>
+
+                            <button onclick="scrollCarousel(this, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white rounded-full p-2 flex items-center justify-center z-10 transition duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                                </svg>
+                            </button>
+
+                            <button onclick="scrollCarousel(this, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white rounded-full p-2 flex items-center justify-center z-10 transition duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </button>
+
+                        </div>
+
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold text-slate-500 group-hover:text-slate-400 transition duration-300">Boys Kearney Tournament Pictures</h3>
+                            <p class="text-slate-600 text-sm mt-1 italic">Photo Carousel &rarr;</p>
+                        </div>
+                    </div>
+
+                    <script>
+                        function scrollCarousel(button, direction) {
+                            // Find the closest container, then find the scrollable track inside it
+                            const container = button.closest('.group');
+                            const track = container.querySelector('.carousel-track');
+                            
+                            // Calculate the width of one image slide
+                            const scrollAmount = track.clientWidth;
+                            
+                            // Scroll smoothly by that amount (direction is either 1 or -1)
+                            track.scrollBy({
+                                left: scrollAmount * direction,
+                                behavior: 'smooth'
+                            });
+                        }
+                    </script>
+                    <style>
+                        /* Hide scrollbar for Chrome, Safari and Opera */
+                        .hide-scrollbar::-webkit-scrollbar {
+                            display: none;
+                        }
+                        /* Hide scrollbar for IE, Edge and Firefox */
+                        .hide-scrollbar {
+                            -ms-overflow-style: none;  /* IE and Edge */
+                            scrollbar-width: none;  /* Firefox */
+                        }
+                    </style>
+                </div>
+
+                <!-- Girls VS Lincoln High -->
                 <a id="graphic" href="#" class="group block bg-slate-900 rounded-xl border border-slate-800 overflow-hidden hover:border-slate-700 transition duration-300">
                     <div class="aspect-[3/4] w-full overflow-hidden bg-slate-800 flex items-center justify-center">
                         <div class="text-slate-700 group-hover:scale-110 transition duration-500">
-                            <img src="../assets/albums/Soccer2026/3.21_Girls.jpg" alt="Soccer Graphic">
+                            <img src="../assets/albums/Soccer2026/3.24_Girls.jpg" alt="Soccer Graphic">
                         </div>
                     </div>
                     <div class="p-4">
-                        <h3 class="text-xl font-bold text-slate-500 group-hover:text-slate-400 transition duration-300">Girls Tournament</h3>
+                        <h3 class="text-xl font-bold text-slate-500 group-hover:text-slate-400 transition duration-300">Girls VS Lincoln High</h3>
                         <p class="text-slate-600 text-sm mt-1 italic">Gameday Graphic &rarr;</p>
                     </div>
                 </a>
+
+                <!-- Boys VS Norfolk -->
+                <a id="graphic" href="#" class="group block bg-slate-900 rounded-xl border border-slate-800 overflow-hidden hover:border-slate-700 transition duration-300">
+                    <div class="aspect-[3/4] w-full overflow-hidden bg-slate-800 flex items-center justify-center">
+                        <div class="text-slate-700 group-hover:scale-110 transition duration-500">
+                            <img src="../assets/albums/Soccer2026/3.24_Boys.jpg" alt="Soccer Graphic">
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-slate-500 group-hover:text-slate-400 transition duration-300">Boys VS Norfolk</h3>
+                        <p class="text-slate-600 text-sm mt-1 italic">Gameday Graphic &rarr;</p>
+                    </div>
+                </a>
+
+                <!-- Girls VS North Platte -->
+                <a id="graphic" href="#" class="group block bg-slate-900 rounded-xl border border-slate-800 overflow-hidden hover:border-slate-700 transition duration-300">
+                    <div class="aspect-[3/4] w-full overflow-hidden bg-slate-800 flex items-center justify-center">
+                        <div class="text-slate-700 group-hover:scale-110 transition duration-500">
+                            <img src="../assets/albums/Soccer2026/3.26_Girls.jpg" alt="Soccer Graphic">
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-slate-500 group-hover:text-slate-400 transition duration-300">Girls VS North Platte</h3>
+                        <p class="text-slate-600 text-sm mt-1 italic">Gameday Graphic &rarr;</p>
+                    </div>
+                </a>
+
+                <!-- Boys VS North Platte -->
+                <a id="graphic" href="#" class="group block bg-slate-900 rounded-xl border border-slate-800 overflow-hidden hover:border-slate-700 transition duration-300">
+                    <div class="aspect-[3/4] w-full overflow-hidden bg-slate-800 flex items-center justify-center">
+                        <div class="text-slate-700 group-hover:scale-110 transition duration-500">
+                            <img src="../assets/albums/Soccer2026/3.26_Boys.jpg" alt="Soccer Graphic">
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-slate-500 group-hover:text-slate-400 transition duration-300">Boys VS North Platte</h3>
+                        <p class="text-slate-600 text-sm mt-1 italic">Gameday Graphic &rarr;</p>
+                    </div>
+                </a>
+
 
         </section>
 
